@@ -63,7 +63,7 @@ spec:
         image: {{ index .Values.images "hyperkube" }}
         imagePullPolicy: IfNotPresent
         command:
-        - /hyperkube
+        - /usr/bin/hyperkube
         {{- if semverCompare "< 1.15" .Values.kubernetesVersion }}
         - apiserver
         {{- else }}

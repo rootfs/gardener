@@ -17,7 +17,8 @@ images:
   tag: v3.3.13
 - name: hyperkube
   sourceRepository: github.com/kubernetes/kubernetes
-  repository: k8s.gcr.io/hyperkube
+  repository: quay.io/openshift/okd-content
+  tag: "4.3.0-0.okd-2019-11-15-182656-hyperkube"
 - name: cluster-autoscaler
   sourceRepository: github.com/gardener/autoscaler
   repository: eu.gcr.io/gardener-project/gardener/autoscaler/cluster-autoscaler
